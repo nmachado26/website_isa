@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: "/website_isa",
+    pathPrefix: "/",
     siteMetadata: {
       title: "Yana G.'s Design Playground",
       titleTemplate: "%s ·I.M.",
