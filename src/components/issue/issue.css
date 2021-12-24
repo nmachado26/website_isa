@@ -1,0 +1,67 @@
+.issue {
+    grid-area: pg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.issue__screen {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    max-width: 240px;
+}
+
+.issue__screen--img {
+    max-width: 100%;
+}
+
+.issue__txt {
+    margin-top: 6vw;
+    margin-right: 6vw;
+    margin-left: 6vw;
+}
+
+.issue__title::before {
+    content: "⚠️"; 
+    margin-right: 8px;
+}
+
+.issue__quote--item {
+    list-style:none;
+}
+
+.issue__quote--item::before {
+    content: "💬"; 
+    font-family: Chapeau-Medium;
+    color: var(--projcolor);
+    display: inline-block;
+    width: 2em;
+    margin-left: -2em;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 1024px) {
+    .issue {
+        flex-direction: row;
+    }
+
+    .issue__screen  {
+        max-width: 240px;
+        margin-right: 0;
+    }
+
+    .issue__txt {
+        margin-left: 36px;
+        margin-right: 16vw;
+        margin-top: 0;
+    }
+}
+
+/* 4K VERSION */
+@media (min-width: 2560px) {
+    .issue__screen  {
+    }
+}

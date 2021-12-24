@@ -1,0 +1,69 @@
+.imgRight {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.imgRight__img {
+    width: 100%;
+}
+/* max-width:100% doesn't make images stretched/too big, but if they're too small for you to stretch em, maybe they should be imgLeft instead, huh? */
+
+.imgRight--padding {
+    padding: 1em;
+    background-color: var(--black);
+    /* max-inline-size: max-content; */
+}
+
+.imgRight__number {
+    color: var(--projcolor);
+    font-weight: 500;
+}
+
+.imgRight__caption {
+    font-family: Chapeau-Medium;
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--black);
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding-top: 8px;
+}
+
+/* TABLET VERSION */
+@media(min-width: 768px) and (max-width: 1023px)
+{
+    .imgRight {
+        padding-top: 24px;
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 1024px) {
+    .imgRight {
+        grid-area: pg;
+        margin-left: 6vw;
+        margin-right: 16vw;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .imgRight__caption {
+        font-size: 12px;
+        color: var(--black);
+        letter-spacing: 1px;
+        line-height: 20px;
+        padding-top: 8px;
+    }
+}
+
+/* 4K VERSION */
+@media (min-width: 2560px) {
+    .imgRight {
+        margin-right: 24vw;
+    }
+}
